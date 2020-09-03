@@ -5,12 +5,13 @@
 		<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 	</head>
 	<body>
-		<div>This is my index.html page
+		<div>
+			<p class="text-2xl text-center ...">This is my index.html page</p>
 		<br>
-		My name is Donald
+		 <p class="text-xl text-center"> My name is Donald</p>
 		</div>
 		<div x-data="{ open: false }">
-			<button @click="open = true">Open Dropdown</button>
+			<button @click="open = true">Click here for some info about me</button>
 		
 			<ul
 				x-show="open"
