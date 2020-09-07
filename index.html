@@ -6,12 +6,13 @@
 	</head>
 	<body>
 		<div>
-			<p class="text-2xl text-center ...">This is my index.html page</p>
+			<p class="text-2xl text-center">This is my index.html page</p>
 		<br>
 		 <p class="text-xl text-center"> My name is Donald</p>
 		</div>
 		<div x-data="{ open: false }">
-			<button @click="open = true">Click here for some info about me</button>
+			<button @click="open = true">
+				<p class="text-center"> Click here for some info about me</p></button>
 		
 			<ul
 				x-show="open"
