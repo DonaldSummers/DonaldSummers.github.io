@@ -13,13 +13,6 @@
 		<div x-data="{ open: false }">
 			<button @click="open = true">
 				<p class="text-center"> Click here for some info about me</p></button>
-		
-			<ul
-				x-show="open"
-				@click.away="open = false"
-			>
-			  Click here for some info about me
-			</button>
 		  
 			<ul x-show="open" class="bg-white absolute mt-2 shadow rounded w-40 py-1 text-indigo-600">
 			  <li><a href="#" class="py-1 px-3 block hover:bg-indigo-100">About</li>
