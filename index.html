@@ -4,11 +4,11 @@
 		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
 	</head>
-	<body>
+	<body style="background-color:yellowgreen">
 		<div>
-			<p class="text-2xl text-center">This is my index.html page</p>
+			<p class="text-2xl text-center text-blue-400 ...">This is my index.html page</p>
 		<br>
-		 <p class="text-xl text-center"> My name is Donald</p>
+		 <p class="text-xl text-center text-red-700"> My name is Donald</p>
 		</div>
 		<div x-data="{ open: false }">
 			<button @click="open = true">
@@ -18,8 +18,14 @@
 				x-show="open"
 				@click.away="open = false"
 			>
-			<p class="text-red-700 text-opacity-100"> Test...</p>
-				Second line
+			  Click here for some info about me
+			</button>
+		  
+			<ul x-show="open" class="bg-white absolute mt-2 shadow rounded w-40 py-1 text-indigo-600">
+			  <li><a href="#" class="py-1 px-3 block hover:bg-indigo-100">About</li>
+			  <li><a href="https://github.com/DonaldSummers" class="py-1 px-3 block hover:bg-indigo-100">GitHub Profile</a></li>
+			</ul>
+		  </div>
 			</ul>
 		</div>
 	</body>
